@@ -6,8 +6,9 @@ import scala.util.Random
 
 object Main extends App {
   def fetchMovies(): List[Movie] = {
-    println("Loading movies...")
-    val movies = MovieMetadataParsing.parseMoviesFromResource(s"movie_metadata_${Random.nextInt(3) + 1}.csv")
+    val fileName = s"movie_metadata_${Random.nextInt(3) + 1}.csv"
+    println(s"Loading movies from $fileName")
+    val movies = MovieMetadataParsing.parseMoviesFromResource(fileName)
     println(s"Loaded ${movies.size} movies.")
     movies
   }
