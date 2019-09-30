@@ -15,7 +15,7 @@ object MovieMetadataParsing {
       val scoreIndex      = keys.indexOf("imdb_score")
       rawMovieLines
         .drop(1)
-        .map { line ⇒
+        .map { line =>
           val cols = line.split(",").map(_.trim)
           Movie(cols(movieTitleIndex), Try(cols(scoreIndex).toDouble).toOption)
         }
