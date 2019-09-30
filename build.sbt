@@ -21,5 +21,7 @@ lazy val root = (project in file("."))
         "com.github.pureconfig" %% "pureconfig"       % "0.12.0",
         "org.scalatest"         %% "scalatest"        % "3.0.8" % Test
       ),
-    addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
+    addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full),
+    addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.10.3"),
+    addCompilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1"),
   )
