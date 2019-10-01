@@ -4,7 +4,14 @@
 The objective of the workshop is to get some theoretical and practical overview of the functional approach to IO-based programming. You will learn how to program a real applications using [Scala](https://www.scala-lang.org/), [Cats](https://typelevel.org/cats/), [Cats Effect](https://typelevel.org/cats-effect/), [Cats MTL](https://typelevel.org/cats-mtl/), [Meow MTL](https://github.com/oleg-py/meow-mtl) and [others](build.sbt). Throughout the day we will switch between quick introductions of the core features and longer step-by-step exercises. This will expose you to all features and tools needed to create and maintain production applications.
 
 ## Table of Contents
-`TODO`
+1. Using `IO`.
+2. Handling errors (`Option` / `Either` / `EitherT` / `ApplicativeError` / `FunctorRaise` / `MonadError`)
+3. Handling State (`StateT` / `MonadState`).
+4. Tagless final & the MTL style.
+5. `Either`s in the business logic.
+6. Using mutable reference (`Ref`).
+7. Doing things concurrently (`Concurrent` / `Fiber`).
+8. Purely functional waiting for values (`Deferred`).
 
 ## Prerequisites
   * Experience developing Scala applications.
