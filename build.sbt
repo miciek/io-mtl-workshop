@@ -2,7 +2,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "io-mtl-workshop",
     organization := "miciek",
-    scalaVersion := "2.13.1",
+    scalaVersion := "2.13.0",
     scalacOptions ++= List(
         "-Ymacro-annotations",
         "-unchecked",
